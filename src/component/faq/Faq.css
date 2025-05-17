@@ -1,0 +1,72 @@
+.faq-section {
+    background-color: white;
+    padding: 24px;
+}
+
+.faq-section .container {
+    /* height: 250px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.accordion {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-header h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.accordion-icon {
+    color: var(--primary-dark-blue);
+    font-size: 14px;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+    margin-top: 8px;
+}
+
+.accordion-content p {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.5;
+}

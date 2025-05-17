@@ -1,0 +1,157 @@
+.commitments-section {
+    background-color: white;
+    padding: 24px 16px;
+}
+
+.commitments-section .container {
+    /* height: 300px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+.section-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    padding: 0px 8px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.commitment-card {
+    /* width: 90%; */
+    background-color: var(--primary-dark-blue);
+    color: white;
+    padding: 16px;
+    border-radius: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.commitment-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.commitment-card p {
+    font-size: 14px;
+    margin-bottom: 16px;
+    flex-grow: 1;
+    /* max-width: 80%; */
+}
+
+.card-footer {
+    display: flex;
+    gap: 12px;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 12px;
+}
+
+.arrow-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: var(--primary-dark-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider-arrow.prev {
+    left: 8px;
+}
+
+.slider-arrow.next {
+    right: 8px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.slider-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background-color: var(--primary-dark-blue);
+}
+
+
+
+@media (max-width: 639px) {
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .slider-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
