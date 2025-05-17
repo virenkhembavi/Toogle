@@ -17,7 +17,7 @@ function Subscribe() {
                         </div>
                     </div>
                     <div className="subscribe-image">
-                        <img src="/src/assets/Mask Group 72.png" alt="Person with phone" />
+                        <img src="/src/assets/HoldingPhone.png" alt="Person with phone" />
                     </div>
                 </div>
             </div>

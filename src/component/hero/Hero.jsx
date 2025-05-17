@@ -14,7 +14,7 @@ function Hero() {
                         <button className="learn-more-btn">Know More <img src={Arrow} width={12} height={12} /></button>
                     </div>
                     <div className="hero-image">
-                        <img src="/src/assets/Mask Group 99.png" alt="Person with magnifying glass" />
+                        <img src="/src/assets/Runningman.png" alt="Person with magnifying glass" />
                     </div>
                 </div>
             </div>
