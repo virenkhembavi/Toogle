@@ -1,5 +1,6 @@
 import "./Subscribe.css"
 import Arrow from "../../assets/RightArrow.svg"
+import Image from "../../assets/HoldingPhone.png"
 
 function Subscribe() {
     return (
@@ -17,7 +18,7 @@ function Subscribe() {
                         </div>
                     </div>
                     <div className="subscribe-image">
-                        <img src="/src/assets/HoldingPhone.png" alt="Person with phone" />
+                        <img src={Image} alt="Person with phone" />
                     </div>
                 </div>
             </div>

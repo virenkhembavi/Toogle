@@ -1,5 +1,6 @@
 import "./Hero.css"
 import Arrow from "../../assets/RightArrow.svg"
+import Image from "../../assets/Runningman.png"
 
 function Hero() {
     return (
@@ -14,7 +15,7 @@ function Hero() {
                         <button className="learn-more-btn">Know More <img src={Arrow} width={12} height={12} /></button>
                     </div>
                     <div className="hero-image">
-                        <img src="/src/assets/Runningman.png" alt="Person with magnifying glass" />
+                        <img src={Image} alt="Person with magnifying glass" />
                     </div>
                 </div>
             </div>
