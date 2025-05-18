@@ -27,11 +27,12 @@ function Hero() {
     const [current, setCurrent] = useState(0);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
+    const totalSlides = Math.ceil(slides.length / 1);
 
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrent((prev) => (prev + 1) % slides.length);
-        }, 3000);
+        }, 4000);
         return () => clearInterval(timer);
     }, []);
 
@@ -48,6 +49,9 @@ function Hero() {
     };
 
     const slide = slides[current];
+
+    const nextSlide = () => setCurrent((prev) => (prev + 1) % totalSlides);
+    const prevSlide = () => setCurrent((prev) => (prev - 1 + totalSlides) % totalSlides);
 
     return (
         <section className="hero-section">
@@ -68,6 +72,9 @@ function Hero() {
                         <img src={slide.image} alt={slide.title} />
                     </div>
                 </div>
+
+                <button className="slider-arrow prev" onClick={prevSlide}>❮</button>
+                <button className="slider-arrow next" onClick={nextSlide}>❯</button>
 
                 <div className="dots">
                     {slides.map((_, i) => (
